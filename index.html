@@ -1,0 +1,409 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Babay Planet</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet" />
+
+    <style>
+        .btn-quick-shop {
+            /* Custom purple color from image */
+            color: #a65ba8;
+            border: 1px solid #e0e0e0;
+            background-color: #fff;
+            /* Extra rounded corners */
+            border-radius: 20px;
+            padding: 10px 25px;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            display: inline-flex;
+            align-items: center;
+            gap: 60px;
+        }
+
+        .btn-quick-shop:hover {
+            background-color: #a65ba8;
+            border-color: #a65ba8;
+            color: #ffffff;
+        }
+
+        .circles {
+            display: flex;
+            justify-content: center;
+            margin-top: 2px;
+        }
+
+        .circles div {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background-color: #d1a3cc;
+            margin-left: 10px;
+        }
+
+        .circles div:hover {
+            background-color: #a6479c;
+        }
+
+        .circles .lst {
+            width: 30px;
+            height: 10px;
+            border-radius: 30px;
+            background-color: #a6479c;
+        }
+    </style>
+</head>
+
+<body style="font-family: 'Quicksand', sans-serif;">
+    <header class="py-3 border-bottom bg-white">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-3 col-6">
+                    <a href="#">
+                        <img src="Assets/baby-planet logo.png" alt="Logo" class="img-fluid" style="height: 50px;">
+                    </a>
+                </div>
+                <div class="col-md-6 d-none d-md-block">
+                    <div class="input-group border rounded-pill p-1">
+                        <input type="text" class="form-control border-0 bg-transparent shadow-none ps-4"
+                            placeholder="Search for products">
+                        <button class="btn rounded-pill px-4 text-white" type="button"
+                            style="background-color: #9b3088;">
+                            search
+                        </button>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6 d-flex justify-content-end align-items-center gap-3">
+                    <a href="#" class="text-dark fs-4"><i class="bi bi-person"></i></a>
+                    <div class="position-relative">
+                        <a href="#" class="text-dark fs-4"><i class="bi bi-heart"></i></a>
+                        <span class="position-absolute top-0 start-100 translate-middle badge rounded-circle p-1"
+                            style="background-color: #9b3088; font-size: 10px; min-width: 18px;">
+                            0
+                        </span>
+                    </div>
+                    <div class="d-flex align-items-center">
+                        <div class="position-relative me-2">
+                            <a href="#" class="text-dark fs-4"><i class="bi bi-cart3"></i></a>
+                            <span class="position-absolute top-0 start-100 translate-middle badge rounded-circle p-1"
+                                style="background-color: #9b3088; font-size: 10px; min-width: 18px;">
+                                0
+                            </span>
+                        </div>
+                        <span class="small" style="color: #8f8f8b;">Rs.0</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary d-flex justify-content-evenly">
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        FASHION
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        GEAR
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        FEEDING
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        BATH
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        SAFETY
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        TOYS
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        DIAPERING
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        NURSERY
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        MOMS
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        SHOOL
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        BIRTHDAY
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " aria-current="page" href="#">SALE</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " aria-current="page" href="#">NEW ARIVAL</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div id="carouselExampleIndicators" class="carousel slide carousel-fade">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="Assets/hero-section img-1.webp" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="Assets/hero section img-2.png" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="Assets/hero section img-3.jpg" class="d-block w-100" alt="...">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <div class="cards d-flex justify-content-evenly my-4">
+        <div class="card" style="width: 18rem; border: none;">
+            <img src="Assets/img-1.webp" class="card-img-top">
+        </div>
+        <div class="card" style="width: 18rem; border: none;">
+            <img src="Assets/img-2.webp" class="card-img-top">
+        </div>
+        <div class="card" style="width: 18rem; border: none;">
+            <img src="Assets/img-3.webp" class="card-img-top">
+        </div>
+        <div class="card" style="width: 18rem; border: none;">
+            <img src="Assets/img-4.webp" class="card-img-top">
+        </div>
+    </div>
+    <div class="container my-5">
+        <div class="row justify-content-center">
+            <div class="col-12 text-center">
+                <div class="d-flex align-items-center justify-content-center">
+                    <div class="flex-grow-1 border-bottom" style="height: 1px;"></div>
+                    <h2 class="mx-4 fw-normal custom-purple-text display-7">Best Sellers</h2>
+                    <div class="flex-grow-1 border-bottom" style="height: 1px;"></div>
+                </div>
+                <p class="text-muted fst-italic mt-2">Enjoy the all best products</p>
+            </div>
+        </div>
+    </div>
+    <div class="cards2 d-flex justify-content-evenly carousel">
+        <div class="card d-flex" style="width: 18rem;">
+            <img src="Assets/img-5.webp" class="card-img-top" alt="...">
+            <div class="card-body">
+                <p class="card-title fw-200">Kids T-Shirt & Short Set Friends White - Mini Charm</p>
+                <div class="txt d-flex gap-3">
+                    <p class="card-text fs-5"><s>Rs.1,595</s></p>
+                    <p class="card-text fs-5">Rs.1,195</p>
+                </div>
+                <button type="button" class="btn btn-quick-shop mx-3">
+                    <span>Quick Shop</span>
+                    <i class="bi bi-cart3 fs-4"></i>
+                </button>
+            </div>
+        </div>
+        <div class="card d-flex" style="width: 18rem;">
+            <img src="Assets/img-6.webp" class="card-img-top" alt="...">
+            <div class="card-body">
+                <p class="card-title fw-200">Kids T-Shirt & Short Set Flower Beige - Oolaa</p>
+                <div class="txt d-flex gap-3">
+                    <p class="card-text fs-5"><s>Rs.995</s></p>
+                    <p class="card-text fs-5">Rs.795</p>
+                </div>
+                <button type="button" class="btn btn-quick-shop mx-3">
+                    <span>Quick Shop</span>
+                    <i class="bi bi-cart3 fs-4"></i>
+                </button>
+            </div>
+        </div>
+        <div class="card d-flex" style="width: 18rem;">
+            <img src="Assets/img-7.jpg" class="card-img-top" height="295px">
+            <div class="card-body">
+                <p class="card-title fw-200">Kids T-Shirt & Short Set Printed Monster Truck Red - Sunshine</p>
+                <div class="txt d-flex gap-3">
+                    <p class="card-text fs-5"><s>Rs.1,595</s></p>
+                    <p class="card-text fs-5">Rs.1,195</p>
+                </div>
+                <button type="button" class="btn btn-quick-shop mx-3">
+                    <span>Quick Shop</span>
+                    <i class="bi bi-cart3 fs-4"></i>
+                </button>
+            </div>
+        </div>
+        <div class="card d-flex" style="width: 18rem;">
+            <img src="Assets/img-8.webp" class="card-img-top" alt="...">
+            <div class="card-body">
+                <p class="card-title fw-200">Kids T-Shirt & Short Set Printed Monster Truck Red - Sunshine</p>
+                <div class="txt d-flex gap-3">
+                    <p class="card-text fs-5"><s>Rs.1,595</s></p>
+                    <p class="card-text fs-5">Rs.1,195</p>
+                </div>
+                <button type="button" class="btn btn-quick-shop mx-3">
+                    <span>Quick Shop</span>
+                    <i class="bi bi-cart3 fs-4"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="circles my-2">
+        <div class="lst"></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+    <div class="d-flex justify-content-center align-items-center my-4">
+        <button type="button" class="btn border-info text-info rounded-pill px-4 d-flex">
+            View All <i class="bi bi-arrow-right ms-2"></i>
+        </button>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous">
+        </script>
+</body>
+</html>
