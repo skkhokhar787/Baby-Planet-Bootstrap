@@ -90,6 +90,21 @@
   flex: 1 1 240px;
 }
 
+.btn-icon {
+  transition: all 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  padding: 8px;
+}
+
+.btn-icon:hover {
+  color: #9b3088 !important;
+  background-color: #f0f0f0;
+  transform: scale(1.15);
+}
+
 .bg-orange-custom {
   background-color: #ffaa45;
 }
