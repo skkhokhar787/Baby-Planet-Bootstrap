@@ -21,7 +21,7 @@
 
 <body style="font-family: 'Quicksand', sans-serif;">
     <header class="py-3 border-bottom bg-white">
-        <div class="container">
+        <div class="container-fluid">
             <div class="row align-items-center">
                 <div class="col-6 col-md-3">
                     <a href="#">
@@ -38,7 +38,7 @@
                         </button>
                     </div>
                 </div>
-                <div class="col-6 d-flex d-md-none justify-content-end align-items-center gap-2">
+                <div class="col-6 d-flex d-md-none justify-content-evenly align-items-center">
                     <button id="mobileSearchToggle" class="btn btn-link text-dark p-0 fs-5" type="button"
                         aria-label="Open search">
                         <i class="bi bi-search"></i>
@@ -59,8 +59,7 @@
                         </span>
                     </div>
                 </div>
-                <div class="col-6 col-md-3 d-none d-md-flex justify-content-end align-items-center gap-3">
-                    <a href="#" class="text-dark fs-4 btn-icon" title="Search"><i class="bi bi-search"></i></a>
+                <div class="col-6 col-md-3 d-none d-md-flex justify-content-evenly align-items-center">
                     <a href="#" class="text-dark fs-4 btn-icon" title="Account"><i class="bi bi-person"></i></a>
                     <div class="position-relative">
                         <a href="#" class="text-dark fs-4 btn-icon" title="Wishlist"><i class="bi bi-heart"></i></a>
@@ -95,17 +94,16 @@
             <div class="input-group border rounded-pill p-1">
                 <input id="mobileSearchInput" type="text" class="form-control border-0 bg-transparent shadow-none ps-4"
                     placeholder="Search for products">
-                <button class="btn rounded-pill px-4 text-white" type="button"
-                    style="background-color: #9b3088;">
+                <button class="btn rounded-pill px-4 text-white" type="button" style="background-color: #9b3088;">
                     search
                 </button>
             </div>
         </div>
     </div>
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container">
+        <div class="container-fluid">
             <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                data-bs-target="#navbarSupportedContent" aria-controls="#navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
                 <i class="bi bi-list fs-3"></i>
             </button>
@@ -326,24 +324,24 @@
             <span class="visually-hidden">Next</span>
         </button>
     </div>
-    <div class="container my-4">
-        <div class="row g-3 justify-content-center">
-            <div class="col-6 col-sm-4 col-md-3">
+    <div class="container-fluid px-3 my-4">
+        <div class="row row-cols-2 row-cols-sm-4 g-3">
+            <div class="col">
                 <div class="card border-0 h-100">
                     <img src="Assets/img-1.webp" class="card-img-top" alt="Product 1">
                 </div>
             </div>
-            <div class="col-6 col-sm-4 col-md-3">
+            <div class="col">
                 <div class="card border-0 h-100">
                     <img src="Assets/img-2.webp" class="card-img-top" alt="Product 2">
                 </div>
             </div>
-            <div class="col-6 col-sm-4 col-md-3">
+            <div class="col">
                 <div class="card border-0 h-100">
                     <img src="Assets/img-3.webp" class="card-img-top" alt="Product 3">
                 </div>
             </div>
-            <div class="col-6 col-sm-4 col-md-3">
+            <div class="col">
                 <div class="card border-0 h-100">
                     <img src="Assets/img-4.webp" class="card-img-top" alt="Product 4">
                 </div>
@@ -489,7 +487,7 @@
             Kid'S FashiOn
         </div>
     </div>
-    <div class="kids-section d-flex justify-content-center align-items-center justify-content-evenly">
+    <div class="kids-section d-flex justify-content-center align-items-center p-3">
         <div class="card border-0 rounded-4 bg-orange-custom" style="width: 18rem; overflow: hidden;">
             <div class="p-2">
                 <img src="Assets/img-10.png" class="card-img-top card-img-custom" alt="Pajama Suits">
@@ -527,7 +525,7 @@
             </div>
         </div>
     </div>
-    <div class="kids-section my-3 d-flex justify-content-center align-items-center justify-content-evenly">
+    <div class="kids-section my-3 d-flex justify-content-center align-items-center justify-content-evenly p-3">
         <div class="card border-0 rounded-4 bg-orange-custom" style="width: 18rem; overflow: hidden;">
             <div class="p-2">
                 <img src="Assets/img-14.png" class="card-img-top card-img-custom" alt="Pajama Suits">
@@ -645,58 +643,61 @@
             </p>
         </div>
     </div>
-    <footer class="footer-custom footer-links">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-3 col-md-6 footer-section">
-                    <h4>Address</h4>
-                    <p>Baby planet warehouse, Block A, Zacotex buildings, 1km roohi naala, 22km ferozepur road.</p>
-                    <p>Lahore</p>
-                </div>
-                <div class="col-lg-3 col-md-6 footer-section">
-                    <div class="mb-4">
-                        <h4>Call Us</h4>
-                        <p>+92 333 142 1787</p>
-                    </div>
-                    <div>
-                        <h4>Whatsapp</h4>
-                        <p>+92 347 794 4327</p>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 footer-section">
-                    <h4>Email</h4>
-                    <p>info@babyplanet.pk</p>
-                </div>
-                <div class="col-lg-3 col-md-6 footer-section">
-                    <h4>Working Hours</h4>
-                    <p>10:00 - 20:00</p>
-                </div>
-            </div>
-        </div>
-        <hr style="width: 97%; display: flex; justify-self: center; align-self: center; margin-top: 10px;">
-        <section class="newsletter-section">
+    <footer class="footer-custom footer-links ">
+        <div class="colored-footer color">
             <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-lg-5 mb-4 mb-lg-0">
-                        <h2>Be the First to Know</h2>
-                        <p>Get all the latest information on Events, Sales and Offers. Sign up for newsletter today.</p>
+                <div class="row">
+                    <div class="col-lg-3 col-md-6 footer-section m-3">
+                        <h4>Address</h4>
+                        <p>Baby planet warehouse, Block A, Zacotex buildings, 1km roohi naala, 22km ferozepur road.</p>
+                        <p>Lahore</p>
                     </div>
-                    <div class="col-lg-7 ">
-                        <div class="input-group custom-input-group mb-3">
-                            <input type="email" class="form-control newsletter-input" placeholder="Your email address"
-                                aria-label="Your email address">
-                            <button class="btn btn-subscribe" type="button">Subscribe</button>
+                    <div class="col-lg-3 col-md-6 footer-section m-3">
+                        <div class="mb-4">
+                            <h4>Call Us</h4>
+                            <p>+92 333 142 1787</p>
                         </div>
-                        <div class="form-check mt-3">
-                            <input class="form-check-input" type="checkbox" id="termsCheck">
-                            <label class="form-check-label ms-2 text-white" for="termsCheck">
-                                I agree with the terms and conditions.
-                            </label>
+                        <div>
+                            <h4>Whatsapp</h4>
+                            <p>+92 347 794 4327</p>
                         </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 footer-section m-3">
+                        <h4>Email</h4>
+                        <p>info@babyplanet.pk</p>
+                    </div>
+                    <div class="col-lg-3 col-md-6 footer-section">
+                        <h4>Working Hours</h4>
+                        <p>10:00 - 20:00</p>
                     </div>
                 </div>
             </div>
-        </section>
+            <hr style="width: 97%; display: flex; justify-self: center; align-self: center; margin-top: 10px;">
+            <section class="newsletter-section">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-lg-5 mb-4 mb-lg-0">
+                            <h2>Be the First to Know</h2>
+                            <p>Get all the latest information on Events, Sales and Offers. Sign up for newsletter today.
+                            </p>
+                        </div>
+                        <div class="col-lg-7 ">
+                            <div class="input-group custom-input-group mb-3">
+                                <input type="email" class="form-control newsletter-input"
+                                    placeholder="Your email address" aria-label="Your email address">
+                                <button class="btn btn-subscribe" type="button">Subscribe</button>
+                            </div>
+                            <div class="form-check mt-3">
+                                <input class="form-check-input" type="checkbox" id="termsCheck">
+                                <label class="form-check-label ms-2 text-white" for="termsCheck">
+                                    I agree with the terms and conditions.
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
         <div class="container my-4">
             <div class="row text-start mb-5">
                 <div class="col-6 col-md-4 col-lg-2 mb-4">
@@ -752,9 +753,7 @@
                 </div>
             </div>
         </div>
-        <div>
-            <p>Copyright © 2026 Baby Planet all rights reserved</p>
-        </div>
+        <p id="Copyright">Copyright © 2026 Baby Planet all rights reserved</p>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous">
